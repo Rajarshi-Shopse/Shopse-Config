@@ -26,3 +26,14 @@ classpath("de.undercouch:gradle-download-task:5.0.1")
 - do `npm install` 
 - go to the `node_modules` and search for `react-native-qrcode-scanner`. go the `node_modules` of `react-native-qrcode-scanner` and delete the `react-native-permissions` folder.
 - do `npm run android` and it will work
+
+## Shopse merchant app production build steps
+### Android
+- app/build.gradle
+- MainActivity.java line no 53 (for preventing screenshot)
+- MainApplication.java - webengage service key config
+- config.js line no 21 - change env to prod from dev
+- restUtils.js change the host to production api
+### IOS
+- go to the info.plist in `ios/ShopSeMerchant/Info.plist` and change `WEGLicenseCode` to production webengage key(copy from MainApplication.java)
+
