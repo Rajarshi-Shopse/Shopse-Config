@@ -32,7 +32,7 @@ classpath("de.undercouch:gradle-download-task:5.0.1")
 - in app/build.gradle increase the version number
 - go to `android/app/src/main/AndroidManifest.xml` and change `android:usesCleartextTraffic="false"` and also do the same for `android/app/src/debug/AndroidManifest.xml`
 - MainActivity.java line no 53 (for preventing screenshot)
-- MainApplication.java - webengage service key config
+- MainApplication.java - change webengage service key config to production
 - config.js line no 21 - change env to prod from dev
 - restUtils.js change the host to production api
 ### IOS
