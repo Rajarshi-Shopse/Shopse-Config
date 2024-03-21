@@ -36,5 +36,6 @@ classpath("de.undercouch:gradle-download-task:5.0.1")
 - config.js line no 21 - change env to prod from dev
 - restUtils.js change the host to production api
 ### IOS
+- in XCode, go to the general tab and increase the `version` and `build` in the identity tab.
 - go to the info.plist in `ios/ShopSeMerchant/Info.plist` and change `WEGLicenseCode` to production webengage key(copy from MainApplication.java)
 
